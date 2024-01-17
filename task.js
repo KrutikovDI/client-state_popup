@@ -1,9 +1,7 @@
 const win = document.getElementById("subscribe-modal");
 const close = document.querySelector(".modal__close_times");
-if (!(getCookie("close") == "True")) {
-      if (!win.classList.contains("modal_active")) {
-      win.classList.add("modal_active");
-    }
+if (!(getCookie("close") != "True")) {
+  win.classList.add("modal_active")
 }
 
 close.addEventListener("click", () => {
